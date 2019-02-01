@@ -26,27 +26,27 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-dbb9170e4256a9910c1a.js"
+    "url": "webpack-runtime-985ed9fe76385113c9b2.js"
   },
   {
-    "url": "app-f5dda49148bcd8439ab0.js"
+    "url": "app-bf1baf8e649c9a4dc1cf.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-9538d068e15af3827374.js"
   },
   {
     "url": "index.html",
-    "revision": "6594c7ea3a346fbb5aa8fc92f988c5fc"
+    "revision": "6ddcddf2481a77feb0354228ee8de2a2"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "70e04de361d94f56e9207d21f8585353"
+    "revision": "2b88b407566bb375a15a5c7c3fe073bf"
   },
   {
-    "url": "1.31ec2af430ccc9b59846.css"
+    "url": "1.9624200ee374921e5906.css"
   },
   {
-    "url": "0-1bd8df466286549fab5c.js"
+    "url": "0-a53fcd27223dad0719cc.js"
   },
   {
     "url": "1-4f68c645ad039ba2835e.js"
@@ -77,7 +77,7 @@ self.__precacheManifest = [
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/wedding-website/offline-plugin-app-shell-fallback/index.html", {
+workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
   whitelist: [/^[^?]*([^.?]{5}|\.html)(\?.*)?$/],
   blacklist: [/\?(.+&)?no-cache=1$/],
 });

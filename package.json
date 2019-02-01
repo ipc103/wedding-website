@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "wedding-website",
+  "description": "Wedding Website for Ian and Megan",
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
@@ -23,7 +23,9 @@
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "npm run deploy-surge",
+    "deploy-gh-pages": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy-surge": "npm run build && surge public --domain ianandmegangettingmarried.com"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",

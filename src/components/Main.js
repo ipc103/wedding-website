@@ -47,7 +47,7 @@ class Main extends React.Component {
 
             </li>
             <li>
-              <a href="https://hiltongardeninn3.hilton.com/en/hotels/michigan/hilton-garden-inn-ann-arbor-ARBGIGI/index.html" target="_blank">The Hilton Garden Inn</a>: $139 per night; located a bit out of town, near the mall; ~15 minute drive to/from the ceremony and reception. A group rate is available for $139 per night. To book use this <a href="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/A/ARBGIGI-NESCAN-20190621/index.jhtml?WT.mc_id=POG" target="_blank">link</a> or call 734.327.6400.
+              <a href="https://hiltongardeninn3.hilton.com/en/hotels/michigan/hilton-garden-inn-ann-arbor-ARBGIGI/index.html" target="_blank">The Hilton Garden Inn</a>: The Hilton is located a bit out of town, near the mall - it’s about a 15-minute drive to/from the ceremony and reception. A group rate is available for $139 per night. To book, use this <a href="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/A/ARBGIGI-NESCAN-20190621/index.jhtml?WT.mc_id=POG" target="_blank">link</a> or call 734.327.6400.
             </li>
           </ul>
 

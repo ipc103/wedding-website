@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import melissas_wedding from '../images/melissas-wedding.jpg'
-import sleeping_bear_dunes from '../images/sleeping-bear-dunes.jpg'
-import rooftop from '../images/rooftop.jpg'
-import engaged from '../images/engaged.jpg'
+import details from '../images/melissas-wedding.jpg'
+import travel from '../images/sleeping-bear-dunes.jpg'
+import annArborFun from '../images/rooftop.jpg'
+import registry from '../images/engaged.jpg'
 
 class Main extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class Main extends React.Component {
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
         <article id="details" className={`${this.props.article === 'details' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Details</h2>
-          <span className="image main"><img src={melissas_wedding} alt="" /></span>
+          <span className="image main"><img src={details} alt="" /></span>
           <p>
             The Wedding will take place June 22nd, 2019 at Island Park, Ann Arbor, Michigan. Reception to follow at The Gandy Dancer Restaurant, a short distance from the park.
           </p>
@@ -27,7 +27,7 @@ class Main extends React.Component {
 
         <article id="travel" className={`${this.props.article === 'travel' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Travel</h2>
-          <span className="image main"><img src={sleeping_bear_dunes} alt="" /></span>
+          <span className="image main"><img src={travel} alt="" /></span>
 
           <p>
             Ann Arbor is about a ~4.5 hour drive from the Western Pennsylvania area, and less than a 30 minute drive from Detroit Metro Airport (DTW). DTW is a convienient Delta hub with many flights in and out daily. Uber and Lyft are both readily available in the area.
@@ -51,7 +51,7 @@ class Main extends React.Component {
 
         <article id="ann-arbor-fun" className={`${this.props.article === 'ann-arbor-fun' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Ann Arbor Fun</h2>
-          <span className="image main"><img src={rooftop} alt="" /></span>
+          <span className="image main"><img src={annArborFun} alt="" /></span>
           <p>Ann Arbor is a great town with lots of things to do and see during the Summer. Below are a few of our favorites:</p>
           <ul>
             <li>The Arboretum - great for nature walks</li>
@@ -66,7 +66,7 @@ class Main extends React.Component {
           <h2 className="major">Registry</h2>
           <p>Registry Coming Soon...</p>
 
-          <span className="image main"><img src={engaged} alt="" /></span>
+          <span className="image main"><img src={registry} alt="" /></span>
           {close}
         </article>
 

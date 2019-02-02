@@ -19,7 +19,16 @@ module.exports = {
         icon: 'src/images/engaged.jpg', // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/img/`
+      }
+    },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp'
   ],
 }

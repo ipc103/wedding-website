@@ -29,22 +29,27 @@ class Main extends React.Component {
           <h2 className="major">Travel</h2>
           <span className="image main"><img src={travel} alt="" /></span>
 
+          <h3>Getting To Ann Arbor</h3>
+
           <p>
             Ann Arbor is about a ~4.5 hour drive from the Western Pennsylvania area, and less than a 30 minute drive from Detroit Metro Airport (DTW). DTW is a convienient Delta hub with many flights in and out daily. Uber and Lyft are both readily available in the area.
           </p>
 
+          <h3>Accommodations</h3>
+
           <p>A block of rooms is set aside at two hotels:</p>
           <ul>
             <li>
-              The Graduate Ann Arbor: $199 per night; located right downtown; ~10 minute walk to/from the reception; ~20 minute walk or ~5 minute drive to/from the ceremony
+              <a href="https://www.graduatehotels.com/ann-arbor/" target="_blank">The Graduate Ann Arbor</a>: The Graduate is located right downtown and is about a 10-minute walk to/from the reception and a 20-minute walk or 5-minute drive to/from the ceremony. A group rate is available for $199 per night. To book, use this <a href="https://gc.synxis.com/rez.aspx?Hotel=68631&Chain=21643&arrive=6/21/2019&depart=6/23/2019&adult=1&child=0&group=190621NEST" target="_blank">link</a> or call 734-769-2200.
+
             </li>
             <li>
-              The Hilton Garden Inn: $139 per night; located a bit out of town, near the mall; ~15 minute drive to/from the ceremony and reception
+              <a href="https://hiltongardeninn3.hilton.com/en/hotels/michigan/hilton-garden-inn-ann-arbor-ARBGIGI/index.html" target="_blank">The Hilton Garden Inn</a>: $139 per night; located a bit out of town, near the mall; ~15 minute drive to/from the ceremony and reception. A group rate is available for $139 per night. To book use this <a href="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/A/ARBGIGI-NESCAN-20190621/index.jhtml?WT.mc_id=POG" target="_blank">link</a> or call 734.327.6400.
             </li>
           </ul>
 
           <p>
-            There are also a number of bed and breakfasts in the area, as well as a good number of AirBnB options. Below is a map with the recommended area to search for an AirBnB -- the outlined area should be free of student housing and also walkable to downtown. In general, anywhere west of Main Street on the North side of town, but south of the river is a good bet.
+            There are also a number of bed and breakfasts in the area, as well as a good number of AirBnB options. We recommend looking for rentals in neighborhoods like Kerrytown, Old West Side, Water Hill, and Allmendinger Heights. Don’t hesitate to reach out to us if you want more advice!
           </p>
           {close}
         </article>

@@ -13,12 +13,15 @@ class Main extends React.Component {
 
     return (
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
-
         <article id="details" className={`${this.props.article === 'details' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Details</h2>
           <span className="image main"><img src={melissas_wedding} alt="" /></span>
-          <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+          <p>
+            The Wedding will take place June 22nd, 2019 at Island Park, Ann Arbor, Michigan. Reception to follow at The Gandy Dancer Restaurant, a short distance from the park.
+          </p>
+          <p>
+            For those arriving in town Friday, we'll meet for drinks at The Bar at Braun Ct., 327 Braun Ct., Ann Arbor.
+          </p>
           {close}
         </article>
 
@@ -26,19 +29,22 @@ class Main extends React.Component {
           <h2 className="major">Travel</h2>
           <span className="image main"><img src={sleeping_bear_dunes} alt="" /></span>
 
-          <p>A block of rooms is set aside at two hotels:
-            <ul>
-              <li>
-                The Graduate Ann Arbor: $199 per night; located right downtown; ~10 minute walk to/from the reception; ~20 minute walk or ~5 minute drive to/from the ceremony
-              </li>
-              <li>
-                The Hilton Garden Inn: $139 per night; located a bit out of town, near the mall; ~15 minute drive to/from the ceremony and reception
-              </li>
-            </ul>
+          <p>
+            Ann Arbor is about a ~4.5 hour drive from the Western Pennsylvania area, and less than a 30 minute drive from Detroit Metro Airport (DTW). DTW is a convienient Delta hub with many flights in and out daily. Uber and Lyft are both readily available in the area.
           </p>
 
+          <p>A block of rooms is set aside at two hotels:</p>
+          <ul>
+            <li>
+              The Graduate Ann Arbor: $199 per night; located right downtown; ~10 minute walk to/from the reception; ~20 minute walk or ~5 minute drive to/from the ceremony
+            </li>
+            <li>
+              The Hilton Garden Inn: $139 per night; located a bit out of town, near the mall; ~15 minute drive to/from the ceremony and reception
+            </li>
+          </ul>
+
           <p>
-            There are also a number of bed and breakfasts in the area, as well as a good number of AirBnB options. Below is a map with the recommended area to search for an AirBnB -- the outlined area should be free of student housing and also walkable to downtown.
+            There are also a number of bed and breakfasts in the area, as well as a good number of AirBnB options. Below is a map with the recommended area to search for an AirBnB -- the outlined area should be free of student housing and also walkable to downtown. In general, anywhere west of Main Street on the North side of town, but south of the river is a good bet.
           </p>
           {close}
         </article>
@@ -46,7 +52,13 @@ class Main extends React.Component {
         <article id="ann-arbor-fun" className={`${this.props.article === 'ann-arbor-fun' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Ann Arbor Fun</h2>
           <span className="image main"><img src={rooftop} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>Ann Arbor is a great town with lots of things to do and see during the Summer. Below are a few of our favorites:</p>
+          <ul>
+            <li>The Arboretum - great for nature walks</li>
+            <li>The Downtown Area - great for shopping, bars, and restaurants</li>
+            <li>HOMES - local brewery with good Korean food and snacks</li>
+            <li>Arbor Brewing Company - another great local brewery with pub snacks</li>
+          </ul>
           {close}
         </article>
 

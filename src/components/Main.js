@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import details from '../images/melissas-wedding.jpg'
 import travel from '../images/sleeping-bear-dunes.jpg'
-import annArborFun from '../images/rooftop.jpg'
-import registry from '../images/engaged.jpg'
+import annArborFun from '../images/ianandmeg2.jpg'
+import registry from '../images/megiantorch.jpg'
 
 class Main extends React.Component {
   render() {

@@ -19,6 +19,12 @@ module.exports = {
         icon: 'src/images/engaged.jpg', // This path is relative to the root of the site.
       },
     },
+    {
+     resolve: `gatsby-plugin-google-analytics`,
+     options: {
+       trackingId: "UA-134122184-1",
+     },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],

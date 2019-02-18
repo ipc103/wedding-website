@@ -35,7 +35,7 @@ class Main extends React.Component {
           <h3>Getting To Ann Arbor</h3>
 
           <p>
-            Ann Arbor is about a ~4.5 hour drive from the Western Pennsylvania area, and less than a 30 minute drive from Detroit Metro Airport (DTW). DTW is a convienient Delta hub with many flights in and out daily. Uber and Lyft are both readily available in the area.
+            Ann Arbor is about a ~4.5 hour drive from the Western Pennsylvania area, and less than a 30 minute drive from Detroit Metro Airport (DTW). DTW is a convenient Delta hub with many flights in and out daily. Uber and Lyft are both readily available in the area.
           </p>
 
           <h3>Accommodations</h3>

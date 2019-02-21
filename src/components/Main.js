@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import melissas_wedding from '../images/melissas-wedding.jpg'
-import sleeping_bear_dunes from '../images/sleeping-bear-dunes.jpg'
-import rooftop from '../images/rooftop.jpg'
-import engaged from '../images/engaged.jpg'
+import details from '../images/melissas-wedding.jpg'
+import travel from '../images/sleeping-bear-dunes.jpg'
+import annArborFun from '../images/ianandmeg2.jpg'
+import registry from '../images/megiantorch.jpg'
 
 class Main extends React.Component {
   render() {
@@ -15,50 +15,61 @@ class Main extends React.Component {
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
         <article id="details" className={`${this.props.article === 'details' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Details</h2>
-          <span className="image main"><img src={melissas_wedding} alt="" /></span>
+          <span className="image main"><img src={details} alt="" /></span>
           <p>
-            The Wedding will take place June 22nd, 2019 at Island Park, Ann Arbor, Michigan. Reception to follow at The Gandy Dancer Restaurant, a short distance from the park.
+            The ceremony will take place at <a href="https://www.google.com/maps/place/Island+Park/@42.2903145,-83.7302252,15z/data=!4m5!3m4!1s0x0:0x3d8b796576b54f1!8m2!3d42.2903145!4d-83.7302252" target="_blank">Island Park</a> in Ann Arbor at 3:00pm. The reception will follow at 5:00pm at <a href="https://www.google.com/maps/place/Gandy+Dancer/@42.2872135,-83.7416809,15z/data=!4m2!3m1!1s0x0:0xec6603a85df213c0?ved=2ahUKEwjQ5pfnm57gAhUSooMKHRPZD24Q_BIwCnoECAUQCA" target="_blank">The Gandy Dancer</a> -- a short distance from the park.
           </p>
           <p>
-            For those arriving in town Friday, we'll meet for drinks at The Bar at Braun Ct., 327 Braun Ct., Ann Arbor.
+            For those arriving in town on Friday, please join us for drinks! (More details to come.)
+          </p>
+          <p>
+            We also invite everyone to join us for brunch on Sunday. (More details to come.)
           </p>
           {close}
         </article>
 
         <article id="travel" className={`${this.props.article === 'travel' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Travel</h2>
-          <span className="image main"><img src={sleeping_bear_dunes} alt="" /></span>
+          <span className="image main"><img src={travel} alt="" /></span>
+
+          <h3>Getting To Ann Arbor</h3>
 
           <p>
-            Ann Arbor is about a ~4.5 hour drive from the Western Pennsylvania area, and less than a 30 minute drive from Detroit Metro Airport (DTW). DTW is a convienient Delta hub with many flights in and out daily. Uber and Lyft are both readily available in the area.
+            Ann Arbor is about a ~4.5 hour drive from the Western Pennsylvania area, and less than a 30 minute drive from Detroit Metro Airport (DTW). DTW is a convenient Delta hub with many flights in and out daily. Uber and Lyft are both readily available in the area.
           </p>
+
+          <h3>Accommodations</h3>
 
           <p>A block of rooms is set aside at two hotels:</p>
           <ul>
             <li>
-              The Graduate Ann Arbor: $199 per night; located right downtown; ~10 minute walk to/from the reception; ~20 minute walk or ~5 minute drive to/from the ceremony
+              <a href="https://www.graduatehotels.com/ann-arbor/" target="_blank">The Graduate Ann Arbor</a>: The Graduate is located right downtown and is about a 10-minute walk to/from the reception and a 20-minute walk or 5-minute drive to/from the ceremony. A group rate is available for $199 per night. To book, use this <a href="https://gc.synxis.com/rez.aspx?Hotel=68631&Chain=21643&arrive=6/21/2019&depart=6/23/2019&adult=1&child=0&group=190621NEST" target="_blank">link</a> or call 734-769-2200.
+
             </li>
             <li>
-              The Hilton Garden Inn: $139 per night; located a bit out of town, near the mall; ~15 minute drive to/from the ceremony and reception
+              <a href="https://hiltongardeninn3.hilton.com/en/hotels/michigan/hilton-garden-inn-ann-arbor-ARBGIGI/index.html" target="_blank">The Hilton Garden Inn</a>: The Hilton is located a bit out of town, near the mall - it’s about a 15-minute drive to/from the ceremony and reception. A group rate is available for $139 per night. To book, use this <a href="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/A/ARBGIGI-NESCAN-20190621/index.jhtml?WT.mc_id=POG" target="_blank">link</a> or call 734.327.6400.
             </li>
           </ul>
 
           <p>
-            There are also a number of bed and breakfasts in the area, as well as a good number of AirBnB options. Below is a map with the recommended area to search for an AirBnB -- the outlined area should be free of student housing and also walkable to downtown. In general, anywhere west of Main Street on the North side of town, but south of the river is a good bet.
+            There are also a number of bed and breakfasts in the area, as well as a good number of AirBnB options. We recommend looking for rentals in neighborhoods like Kerrytown, Old West Side, Water Hill, and Allmendinger Heights. Don’t hesitate to reach out to us if you want more advice!
           </p>
           {close}
         </article>
 
         <article id="ann-arbor-fun" className={`${this.props.article === 'ann-arbor-fun' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Ann Arbor Fun</h2>
-          <span className="image main"><img src={rooftop} alt="" /></span>
+          <span className="image main"><img src={annArborFun} alt="" /></span>
           <p>Ann Arbor is a great town with lots of things to do and see during the Summer. Below are a few of our favorites:</p>
           <ul>
             <li>The Arboretum - great for nature walks</li>
             <li>The Downtown Area - great for shopping, bars, and restaurants</li>
             <li>HOMES - local brewery with good Korean food and snacks</li>
             <li>Arbor Brewing Company - another great local brewery with pub snacks</li>
+            <li>Zingermans - the best sandwiches in Michigan!</li>
+            <li>Argo Park - rent canoes, tubes, and kayaks for a trip down the Huron River</li>
           </ul>
+          <p>If you plan on spending more time in Michigan, “Up North” is a favorite place. Traverse City, the Sleeping Bear Dunes, and beautiful lakes are just a 4-hour drive from Ann Arbor.</p>
           {close}
         </article>
 
@@ -66,7 +77,7 @@ class Main extends React.Component {
           <h2 className="major">Registry</h2>
           <p>Registry Coming Soon...</p>
 
-          <span className="image main"><img src={engaged} alt="" /></span>
+          <span className="image main"><img src={registry} alt="" /></span>
           {close}
         </article>
 

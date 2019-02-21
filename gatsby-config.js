@@ -20,11 +20,18 @@ module.exports = {
       },
     },
     {
+<<<<<<< HEAD
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `img`,
         path: `${__dirname}/src/images/`
       }
+=======
+     resolve: `gatsby-plugin-google-analytics`,
+     options: {
+       trackingId: "UA-134122184-1",
+     },
+>>>>>>> master
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',

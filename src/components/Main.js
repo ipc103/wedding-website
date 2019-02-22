@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql, StaticQuery } from 'gatsby'
+import Img from "gatsby-image"
 
-import details from '../images/melissas-wedding.jpg'
 import travel from '../images/sleeping-bear-dunes.jpg'
 import annArborFun from '../images/ianandmeg2.jpg'
 import registry from '../images/megiantorch.jpg'
@@ -15,7 +16,12 @@ class Main extends React.Component {
       <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
         <article id="details" className={`${this.props.article === 'details' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Details</h2>
-          <span className="image main"><img src={details} alt="" /></span>
+          <span className="image main">
+            <Img title="Details"
+                alt="Megan and Ian Dancing"
+                fluid={this.props.images.details.childImageSharp.fluid}
+              />
+          </span>
           <p>
             The ceremony will take place at <a href="https://www.google.com/maps/place/Island+Park/@42.2903145,-83.7302252,15z/data=!4m5!3m4!1s0x0:0x3d8b796576b54f1!8m2!3d42.2903145!4d-83.7302252" target="_blank">Island Park</a> in Ann Arbor at 3:00pm. The reception will follow at 5:00pm at <a href="https://www.google.com/maps/place/Gandy+Dancer/@42.2872135,-83.7416809,15z/data=!4m2!3m1!1s0x0:0xec6603a85df213c0?ved=2ahUKEwjQ5pfnm57gAhUSooMKHRPZD24Q_BIwCnoECAUQCA" target="_blank">The Gandy Dancer</a> -- a short distance from the park.
           </p>
@@ -95,4 +101,21 @@ Main.propTypes = {
   setWrapperRef: PropTypes.func.isRequired,
 }
 
-export default Main
+const pageQuery = graphql`
+  query {
+    details: file(relativePath: { eq: "melissas-wedding.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+  }
+`
+
+export default props => (
+  <StaticQuery
+    query={pageQuery}
+    render={ data => <Main images={data} {...props} /> }
+  />
+)

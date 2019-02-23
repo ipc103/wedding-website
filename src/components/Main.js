@@ -3,10 +3,6 @@ import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 import Img from "gatsby-image"
 
-import travel from '../images/sleeping-bear-dunes.jpg'
-import annArborFun from '../images/ianandmeg2.jpg'
-import registry from '../images/megiantorch.jpg'
-
 class Main extends React.Component {
   render() {
 
@@ -36,7 +32,12 @@ class Main extends React.Component {
 
         <article id="travel" className={`${this.props.article === 'travel' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Travel</h2>
-          <span className="image main"><img src={travel} alt="" /></span>
+          <span className="image main">
+            <Img title="Travel"
+                alt="Sleeping Bear Dunes"
+                fluid={this.props.images.travel.childImageSharp.fluid}
+              />
+          </span>
 
           <h3>Getting To Ann Arbor</h3>
 
@@ -65,7 +66,12 @@ class Main extends React.Component {
 
         <article id="ann-arbor-fun" className={`${this.props.article === 'ann-arbor-fun' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Ann Arbor Fun</h2>
-          <span className="image main"><img src={annArborFun} alt="" /></span>
+          <span className="image main">
+            <Img title="Ann Arbor Fun"
+                alt="Rooftop Picture"
+                fluid={this.props.images.annArborFun.childImageSharp.fluid}
+              />
+          </span>
           <p>Ann Arbor is a great town with lots of things to do and see during the Summer. Below are a few of our favorites:</p>
           <ul>
             <li>The Arboretum - great for nature walks</li>
@@ -83,7 +89,12 @@ class Main extends React.Component {
           <h2 className="major">Registry</h2>
           <p>Registry Coming Soon...</p>
 
-          <span className="image main"><img src={registry} alt="" /></span>
+          <span className="image main">
+          <Img title="Registry"
+              alt="Torch Lake"
+              fluid={this.props.images.registry.childImageSharp.fluid}
+            />
+          </span>
           {close}
         </article>
 
@@ -99,6 +110,7 @@ Main.propTypes = {
   onCloseArticle: PropTypes.func,
   timeout: PropTypes.bool,
   setWrapperRef: PropTypes.func.isRequired,
+  images: PropTypes.object.isRequired
 }
 
 const pageQuery = graphql`
@@ -109,7 +121,28 @@ const pageQuery = graphql`
             ...GatsbyImageSharpFluid
           }
         }
-      }
+    }
+    travel: file(relativePath: { eq: "sleeping-bear-dunes.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
+    annArborFun: file(relativePath: { eq: "ianandmeg2.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
+    registry: file(relativePath: { eq: "megiantorch.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
   }
 `
 

@@ -20,12 +20,21 @@ module.exports = {
       },
     },
     {
-     resolve: `gatsby-plugin-google-analytics`,
-     options: {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/images/`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
        trackingId: "UA-134122184-1",
-     },
+      },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp'
   ],
 }

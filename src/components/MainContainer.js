@@ -33,6 +33,13 @@ const pageQuery = graphql`
           }
         }
     }
+    map: file(relativePath: { eq: "weddingmap.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+    }
   }
 `
 

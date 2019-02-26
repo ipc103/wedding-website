@@ -58,6 +58,10 @@ function Main(props) {
         <p>
           There are also a number of bed and breakfasts in the area, as well as a good number of AirBnB options. We recommend looking for rentals in neighborhoods like Kerrytown, Old West Side, Water Hill, and Allmendinger Heights. Don’t hesitate to reach out to us if you want more advice!
         </p>
+        <Img title="Wedding Map"
+            alt="Wedding Map"
+            fluid={props.images.map.childImageSharp.fluid}
+          />
         <CloseButton onClose={props.onCloseArticle} />
       </article>
 

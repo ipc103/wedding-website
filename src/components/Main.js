@@ -88,7 +88,7 @@ function Main(props) {
 
       <article id="registry" className={`${props.article === 'registry' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Registry</h2>
-        <p>Registry Coming Soon...</p>
+        <p>Registered at <a href="https://www.crateandbarrel.com/gift-registry/megan-nestor-and-ian-candy/r5946531" target="_blank">Crate and Barrel</a> and <a href="https://www.anthropologie.com/registry/listing?registryId=ZTRJZMMXMTK1" target="_blank">Anthropologie</a></p>
 
         <span className="image main">
         <Img title="Registry"

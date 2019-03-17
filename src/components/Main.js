@@ -16,7 +16,7 @@ function Main(props) {
             />
         </span>
         <p>
-          The ceremony will take place at <a href="https://www.google.com/maps/place/Island+Park/@42.2903145,-83.7302252,15z/data=!4m5!3m4!1s0x0:0x3d8b796576b54f1!8m2!3d42.2903145!4d-83.7302252" target="_blank">Island Park</a> in Ann Arbor at 3:00pm. The reception will follow at 5:00pm at <a href="https://www.google.com/maps/place/Gandy+Dancer/@42.2872135,-83.7416809,15z/data=!4m2!3m1!1s0x0:0xec6603a85df213c0?ved=2ahUKEwjQ5pfnm57gAhUSooMKHRPZD24Q_BIwCnoECAUQCA" target="_blank">The Gandy Dancer</a> -- a short distance from the park.
+          The ceremony will take place at <a href="https://www.google.com/maps/place/Island+Park/@42.2903145,-83.7302252,15z/data=!4m5!3m4!1s0x0:0x3d8b796576b54f1!8m2!3d42.2903145!4d-83.7302252" target="_blank" rel="noopener noreferrer">Island Park</a> in Ann Arbor at 3:00pm. The reception will follow at 5:00pm at <a href="https://www.google.com/maps/place/Gandy+Dancer/@42.2872135,-83.7416809,15z/data=!4m2!3m1!1s0x0:0xec6603a85df213c0?ved=2ahUKEwjQ5pfnm57gAhUSooMKHRPZD24Q_BIwCnoECAUQCA" target="_blank" rel="noopener noreferrer">The Gandy Dancer</a> -- a short distance from the park.
         </p>
         <p>
           For those arriving in town on Friday, please join us for drinks! (More details to come.)
@@ -47,11 +47,11 @@ function Main(props) {
         <p>A block of rooms is set aside at two hotels:</p>
         <ul>
           <li>
-            <a href="https://www.graduatehotels.com/ann-arbor/" target="_blank">The Graduate Ann Arbor</a>: The Graduate is located right downtown and is about a 10-minute walk to/from the reception and a 20-minute walk or 5-minute drive to/from the ceremony. A group rate is available for $199 per night. To book, use this <a href="https://gc.synxis.com/rez.aspx?Hotel=68631&Chain=21643&arrive=6/21/2019&depart=6/23/2019&adult=1&child=0&group=190621NEST" target="_blank">link</a> or call 734-769-2200.
+            <a href="https://www.graduatehotels.com/ann-arbor/" target="_blank" rel="noopener noreferrer">The Graduate Ann Arbor</a>: The Graduate is located right downtown and is about a 10-minute walk to/from the reception and a 20-minute walk or 5-minute drive to/from the ceremony. A group rate is available for $199 per night. To book, use this <a href="https://gc.synxis.com/rez.aspx?Hotel=68631&Chain=21643&arrive=6/21/2019&depart=6/23/2019&adult=1&child=0&group=190621NEST" target="_blank" rel="noopener noreferrer">link</a> or call 734-769-2200.
 
           </li>
           <li>
-            <a href="https://hiltongardeninn3.hilton.com/en/hotels/michigan/hilton-garden-inn-ann-arbor-ARBGIGI/index.html" target="_blank">The Hilton Garden Inn</a>: The Hilton is located a bit out of town, near the mall - it’s about a 15-minute drive to/from the ceremony and reception. A group rate is available for $139 per night. To book, use this <a href="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/A/ARBGIGI-NESCAN-20190621/index.jhtml?WT.mc_id=POG" target="_blank">link</a> or call 734.327.6400.
+            <a href="https://hiltongardeninn3.hilton.com/en/hotels/michigan/hilton-garden-inn-ann-arbor-ARBGIGI/index.html" target="_blank" rel="noopener noreferrer">The Hilton Garden Inn</a>: The Hilton is located a bit out of town, near the mall - it’s about a 15-minute drive to/from the ceremony and reception. A group rate is available for $139 per night. To book, use this <a href="https://hiltongardeninn.hilton.com/en/gi/groups/personalized/A/ARBGIGI-NESCAN-20190621/index.jhtml?WT.mc_id=POG" target="_blank" rel="noopener noreferrer">link</a> or call 734.327.6400.
           </li>
         </ul>
 
@@ -88,7 +88,7 @@ function Main(props) {
 
       <article id="registry" className={`${props.article === 'registry' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Registry</h2>
-        <p>Registered at <a href="https://www.crateandbarrel.com/gift-registry/megan-nestor-and-ian-candy/r5946531" target="_blank">Crate and Barrel</a> and <a href="https://www.anthropologie.com/registry/listing?registryId=ZTRJZMMXMTK1" target="_blank">Anthropologie</a></p>
+        <p>Registered at <a href="https://www.crateandbarrel.com/gift-registry/megan-nestor-and-ian-candy/r5946531" target="_blank" rel="noopener noreferrer">Crate and Barrel</a> and <a href="https://www.anthropologie.com/registry/listing?registryId=ZTRJZMMXMTK1" target="_blank" rel="noopener noreferrer">Anthropologie</a></p>
 
         <span className="image main">
         <Img title="Registry"

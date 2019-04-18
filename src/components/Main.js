@@ -19,10 +19,10 @@ function Main(props) {
           The ceremony will take place at <a href="https://www.google.com/maps/place/Island+Park/@42.2903145,-83.7302252,15z/data=!4m5!3m4!1s0x0:0x3d8b796576b54f1!8m2!3d42.2903145!4d-83.7302252" target="_blank" rel="noopener noreferrer">Island Park</a> in Ann Arbor at 3:00pm. The reception will follow at 5:00pm at <a href="https://www.google.com/maps/place/Gandy+Dancer/@42.2872135,-83.7416809,15z/data=!4m2!3m1!1s0x0:0xec6603a85df213c0?ved=2ahUKEwjQ5pfnm57gAhUSooMKHRPZD24Q_BIwCnoECAUQCA" target="_blank" rel="noopener noreferrer">The Gandy Dancer</a> -- a short distance from the park.
         </p>
         <p>
-          For those arriving in town on Friday, please join us for drinks! (More details to come.)
+          For those arriving in town on Friday, we welcome you to stop by HOMES Brewery at 2321 Jackson Ave. We’ll be there for some pre-wedding fun between 8:00 p.m. and 11:00 p.m.
         </p>
         <p>
-          We also invite everyone to join us for brunch on Sunday. (More details to come.)
+          We also invite everyone to join us at our home - 407 Potter Avenue - for coffee, bagels, and Bloody Marys on Sunday, beginning at 11:00 a.m.
         </p>
         <CloseButton onClose={props.onCloseArticle} />
       </article>
